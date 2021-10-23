@@ -13,4 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
+  --main-bg-color: "#5166D8";
+  --secondary-bg-color: "#5A7FFF";
+  --bottom-bg-color: "#4254B2";
 }
