@@ -7,11 +7,8 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
-    <div>
-      <Navbar />
-      <main>
-        {children}
-      </main>
-    </div>
+    <main>
+      {children}
+    </main>
   )
 }

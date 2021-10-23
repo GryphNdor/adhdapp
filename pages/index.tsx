@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from "../styles/Home.module.css"
+import styles from '../styles/Home.module.css'
+
 
 const Home: NextPage = () => {
   return (
@@ -11,16 +12,22 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.thing}>
-        <h1>test</h1>
-      </div>
+      <div>
+        <div className={styles.top}>
+          <h1 className={styles.h1}>
+            ADHD Tracker
+          </h1>
+        </div>
 
-      <div className={styles.otherThing}>
+        <div className={styles.middle}>
 
-      </div>
+        </div>
+        <img className={styles.hero} src="/heroWaves.svg" alt="" />
 
-      <div className={styles.thingThree}>
-        <h1></h1>
+        <div className={styles.bottom}>
+          <h1>Technology</h1>
+        </div>
+
       </div>
 
     </div >

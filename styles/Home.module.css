@@ -1,5 +1,40 @@
-.thing{
-  background-color: #5166D8;
-  height:100vh;
+@value main-bg-color: #5166D8;
+@value secondary-bg-color: #5A7FFF;
+
+
+.top{
+  background-color: main-bg-color;
+  height:115vh;
+  margin-bottom:-275px;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0 0, 205% 0%, 110% 75.2%, 0% 100%);
+
 }
 
+
+.hero{
+  position:absolute;
+  height:105%;
+  top:0;
+  right:100px;
+  z-index: 0;
+}
+
+.middle{
+  z-index: 10;
+  height: 100vh;
+  margin-bottom: -200px;
+  background-color: secondary-bg-color;
+  /* border: black solid 2px; */
+}
+
+.bottom{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/Vector.svg);
+  background-repeat: none;
+  background-size: cover;
+  /* border: black solid 2px; */
+}
