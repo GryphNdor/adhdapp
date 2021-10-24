@@ -1,5 +1,6 @@
 @value main-bg-color: #5166D8;
 @value secondary-bg-color: #5A7FFF;
+@value button-color: #AFD9FF;
 
 
 .top{
@@ -12,10 +13,33 @@
   z-index: 3;
 }
 
+.openAppButton{
+  width:250px;
+  height:60px;
+  font-size: 20px;
+  background-color: button-color;
+  border: none;
+  border-radius: 10px;
+}
+
+.titleBox{
+  margin-left: 150px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: start;
+  z-index: 6;
+}
+.titleBox h1{
+  font-size: 120px;
+  padding:0;
+  line-height: 1px;
+}
 
 .hero{
   position: absolute;
-  height:100%;
+  height:120%;
   top:0;
   right:0;
   z-index: 1
@@ -31,25 +55,76 @@
 }
 
 .bottom{
-  height: 150vh;
+  height: 130vh;
   display: flex;
+  justify-items: center;
   flex-direction: column;
   background: url(/Vector.svg);
   background-repeat: none;
   background-size: cover;
-  /* border: black solid 2px; */
 }
 
 .bottomText{
-  height:500px;
-  display: flex;
-}
-
-.bottom p{
-  margin-left: -290px;
+  margin-left: 150px;
+  position: relative;
+  top: 240px;
+  z-index: 6;
 }
 
 .footer{
-  position: relative;
-  bottom: 0;
+  height:100%;
+  width: 100%;
+  background: url(/footerWaves.svg) no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.logos{
+  width:10%;
+}
+
+
+.first, .second, .third, .fourth{
+  position: absolute;
+  width:10%;
+}
+
+.first{
+  right:400px;
+  bottom:120px;
+}
+.second{
+  right:180px;
+  top:100px;
+}
+.third{
+  right:400px;
+  top:200px;
+}
+.fourth{
+  right:200px;
+  top:320px;
+}
+
+.techStack{
+  display: flex;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .titleBox{
+    margin-left: 20px;
+  }
+  .bottomText{
+    margin-left: 20px;
+  }
+  .techStack{
+    display:flex;
+    flex-direction: row;
+    margin-left:500px;
+  }
+  .first, .second, .third, .fourth{
+    position: block;
+  }
+  
 }
