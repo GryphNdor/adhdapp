@@ -1,7 +1,17 @@
+import axios from 'axios'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+
+const callPython = () => {
+  axios.post(
+    '~/pythonStuff/hello_world.py',
+    { data: "test" }
+  ).then((res) => {
+    console.log(res);
+  });
+}
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +31,10 @@ const Home: NextPage = () => {
             <p>
               Et porttitor praesent viverra ut enim enim dui.
             </p>
-            <button className={styles.openAppButton}>OPEN APP</button>
+            <button
+              onClick={() => callPython()}
+              className={styles.openAppButton}
+            >OPEN APP</button>
           </div>
           <img className={styles.hero} src="/heroWaves.svg"></img>
         </div>
@@ -38,12 +51,11 @@ const Home: NextPage = () => {
               Congue quisque consectetur lectus scelerisque urna rutrum ut venenatis nib.
               Pellentesque interdum semper dolor morbi libero. Mollis placerat viverra scelerisque viverra magna. Turpis faucibus sodales arcu dui amet, pellentesque vitae eget euismod. Viverra interdum sed placerat proin in. Tellus turpis placerat nunc egestas facilisi. Egestas vel turpis mauris est. Fermentum sem massa morbi in volutpat.
             </p>
-            <li className="techStack">
-              <img src="/nvidia.svg" alt='nvidia' />
-              <img src="/nextjs.svg" alt='nextjs' />
-              <img src="/cockroachlabs.svg" alt='cockroachlabs' />
-              <img src="/opencv.svg" alt='opencv' />
-            </li>
+
+            <img className={styles.first} src="/nvidia.svg" alt='nvidia' />
+            <img className={styles.second} src="/nextjs.svg" alt='nextjs' />
+            <img className={styles.third} src="/cockroachlabs.svg" alt='cockroachlabs' />
+            <img className={styles.fourth} src="/opencv.svg" alt='opencv' />
           </div>
 
           <div className={styles.footer}></div>

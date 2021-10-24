@@ -22,13 +22,17 @@
   border-radius: 10px;
 }
 
+.openAppButton:hover{
+  background-color: #9ac0e3;
+}
+
 .titleBox{
   margin-left: 150px;
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-items: start;
+  align-items: flex-start;
+  justify-items: flex-start;
   z-index: 6;
 }
 .titleBox h1{
@@ -108,7 +112,7 @@
 
 .techStack{
   display: flex;
-  }
+}
 
 
 @media screen and (max-width: 600px) {
@@ -123,8 +127,17 @@
     flex-direction: row;
     margin-left:500px;
   }
-  .first, .second, .third, .fourth{
-    position: block;
-  }
   
+}
+
+@media screen and (max-width: 800px) {
+  .first, .second, .third, .fourth{
+    top:450px;
+  }
+  .second{
+    right: 300px;
+  }
+  .first{
+    right: 100px;
+  }
 }

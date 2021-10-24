@@ -11,7 +11,6 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       <main>
         {children}
       </main>
-
     </>
   )
 }
