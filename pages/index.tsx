@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import styles from '../styles/Home.module.css'
-
+import Image from 'next/image'
 
 
 
@@ -59,22 +59,22 @@ const Home: NextPage = () => {
 
 
           </div>
-          <img className={styles.hero} src="/heroWaves.svg"></img>
+          <img className={styles.hero} src="/heroWaves.svg" />
         </div>
 
 
         <div id="middle" className={styles.middle}>
           <div>
-            <img src="/laptop.svg" alt="" />
-            <p>The app combines a simple webcam with eye tracking software that is intuitive and simple to use. The software detects any patterns and identifies distracted eye movements or zoning off and returns the results in easy to read format. The app will be free and accessible to anyone.</p>
+            <Image width={100} height={100} src="/laptop.svg" alt="" />
+            <p>The app combines a simple webcam with eye tracking software that is intuitive and simple to use. The software detects any patterns and identifies distracted eye movements or zoning off while you are working and returns the results in easy to read format. The app will be free and accessible to anyone.</p>
           </div>
           <div className={styles.middleTitle}>
-            <img src="/eye.svg" alt="" />
-            <p>Multiple studies have shown that eye motion is correlated to ADHD. In this particular <u><Link href="https://www.sciencedirect.com/science/article/pii/S0042698914001187"> study, </Link></u> they found that the average eye movements and blinks were higher in the group with ADHD. Using eye tracking technology, we hope to identify or help identify symptoms of ADHD and help people get proper care.</p>
+            <Image width={100} height={100} src="/eye.svg" alt="" />
+            <p>Multiple studies have shown that eye motion is correlated to ADHD. In this particular <u><Link href="https://www.sciencedirect.com/science/article/pii/S0042698914001187"> study, </Link></u> scientists found that the average eye movements and blinks were higher in the group with ADHD. Using eye tracking technology, we hope to identify symptoms of ADHD and help people get proper care.</p>
           </div>
           <div>
-            <img src="/handshake.svg" alt="" />
-            <p>Combining ADHD research with technology makes diagnosing the disorder easier for doctors. Alongside doctors, patients can download the app and get a prognosis before going to the hospital room. This helps the healthcare industry and addresses income inequality by decreasing hospital visits for ADHD.</p>
+            <Image width={100} height={100} src="/handshake.svg" alt="" />
+            <p>Combining ADHD research with technology allows for doctors to catch signs of ADHD early and provide more accurate diagnoses. Patients can also download the app and help streamline the medication process. This helps the healthcare industry and addresses income inequality by decreasing hospital visits for ADHD.</p>
           </div>
         </div>
 

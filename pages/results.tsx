@@ -5,16 +5,6 @@ import styles from '../styles/Results.module.css'
 
 export default function results() {
 
-  const [image, setImage] = React.useState('')
-  // const imgRef = React.useRef() as React.MutableRefObject<HTMLInputElement>;
-
-  const canvasRef = React.useRef(null);
-  React.useEffect(() => {
-    let data = window.localStorage.getItem('image')
-    setImage(data!)
-
-  }, [])
-
   return (
     <div>
       <Head>
