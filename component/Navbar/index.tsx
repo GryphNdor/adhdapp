@@ -10,9 +10,9 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <ul className={styles.container}>
           <li><Link href='/'><h3>Home</h3></Link></li>
-          <li><Link href='/about'>About</Link></li>
-          <li><a onClick={() => scroll.scrollTo(800)}>Goals</a></li>
+          <li><a onClick={() => scroll.scrollTo(800)}>About</a></li>
           <li><a onClick={() => scroll.scrollTo(1500)}> Tech</a></li>
+          <li><Link href='/team'>Team</Link></li>
         </ul>
       </nav>
 

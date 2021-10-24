@@ -35,7 +35,7 @@ const Home: NextPage = () => {
               IRYS
             </h1>
             <p>
-              Using eye tracking technology to beat ADHD
+              Using eye tracking technology to combat ADHD
             </p>
             {results ?
               <Link href="/results">
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
             <img src="/laptop.svg" alt="" />
             <p>The app uses software combined with an eye tracker that is intuitive and simple. The software then detects any patterns and identifies distracted eye movements or zoning off and returns the results in easy to read format. The app will be free and accessible to anyone.</p>
           </div>
-          <div>
+          <div className={styles.middleTitle}>
             <img src="/eye.svg" alt="" />
             <p>Multiple studies have shown that eye motion is correlated to ADHD. In this particular <Link href="https://www.sciencedirect.com/science/article/pii/S0042698914001187"> study </Link>, they found that the average eye movements and blinks were higher in the group with ADHD. Using eye tracking technology, we hope to identify or help identify symptomes of ADHD</p>
           </div>
@@ -81,8 +81,7 @@ const Home: NextPage = () => {
           <div className={styles.bottomText}>
             <h1>Technology</h1>
             <p>
-              Congue quisque consectetur lectus scelerisque urna rutrum ut venenatis nib.
-              Pellentesque interdum semper dolor morbi libero. Mollis placerat viverra scelerisque viverra magna. Turpis faucibus sodales arcu dui amet, pellentesque vitae eget euismod. Viverra interdum sed placerat proin in. Tellus turpis placerat nunc egestas facilisi. Egestas vel turpis mauris est. Fermentum sem massa morbi in volutpat.
+              The underlying technology for this project used machine learning with OpenCV and Python to track eye movements and determine states of distractedness. The UI and webapp are both built on NextJS, a ReactJS framework with TypeScript integration.Behind the scenes the app communicates with CockroachDB to collect and store user data to be used for overall correlation. The entire app also communicates via Node APIs.
             </p>
 
             <img className={styles.first} src="/python.svg" alt='python' />

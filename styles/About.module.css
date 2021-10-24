@@ -3,9 +3,28 @@
 @value button-color: #AFD9FF;
 
 .main{
-  height:100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: black
+}
+
+.text{
+  margin-top: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: main-bg-color;
+  flex-direction: column;
+}
+
+.list{
+  text-decoration: none;
+}
+
+.waves{
+  position:relative;
+  height:100%;
+  width: 100%;
+  background: url(/teamWaves.svg) no-repeat;
+  background-size: cover;
+  background-position: right bottom;
 }

@@ -14,6 +14,7 @@
   cursor: pointer;
   display: inline-block;
   padding: 0 20px;
+  font-size: 16px;
 }
 
 .container ul:first-child{

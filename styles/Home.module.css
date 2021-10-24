@@ -55,7 +55,7 @@
 .middle{
   z-index: 10;
   height: 95vh;
-  margin-bottom: -160px;
+  margin-bottom: -180px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -69,6 +69,7 @@
   flex-direction: column;
   text-align: center;
 }
+
 
 .middle p{
   width:65%;
@@ -100,7 +101,7 @@
 }
 
 .logos{
-  width:10%;
+  width:1vw;
 }
 
 
@@ -111,19 +112,19 @@
 
 .first{
   right:400px;
-  bottom:120px;
+  bottom:50%;
 }
 .second{
-  right:180px;
-  top:100px;
+  right:150px;
+  top:30%;
 }
 .third{
   right:400px;
-  top:200px;
+  top:80%;
 }
 .fourth{
   right:200px;
-  top:320px;
+  top:130%;
 }
 
 .techStack{
