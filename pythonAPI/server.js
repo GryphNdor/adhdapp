@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
   let dataToSend
 
-  const python = spawn('python', ['hello_world.py'])
+  const python = spawn('python', ['GazeTracking/main.py'])
 
 
   python.stdout.on('data', function (data) {
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
   python.on('close', (code) => {
     console.log(`child process close all stdio with code ${code}`)
-    res.send('success')
+    res.send('GazeTracking/graph.png')
   });
 })
 
