@@ -2,3 +2,13 @@
 @value secondary-bg-color: #5A7FFF;
 @value button-color: #AFD9FF;
 
+.main{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url(/resultsBackground.svg) no-repeat;
+  background-size: cover;
+
+}

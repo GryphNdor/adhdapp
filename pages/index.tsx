@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 
 
 
+
 const Home: NextPage = () => {
   const [results, setResults] = React.useState(false)
   const callPython = () => {
@@ -14,11 +15,11 @@ const Home: NextPage = () => {
       'http://localhost:8080'
     ).then((res) => {
       console.log(res.data)
-      if (res.data === "success") {
-        setResults(true);
-      }
+      setResults(true)
     });
   }
+
+
 
   return (
     <div>
