@@ -17,18 +17,27 @@ const Home: NextPage = () => {
           <h1 className={styles.h1}>
             ADHD Tracker
           </h1>
+          <img className={styles.hero} src="/heroWaves.svg"></img>
         </div>
+
 
         <div className={styles.middle}>
 
         </div>
-        <img className={styles.hero} src="/heroWaves.svg" alt="" />
 
         <div className={styles.bottom}>
-          <h1>Technology</h1>
+          <div className={styles.bottomText}>
+            <h1>Technology</h1>
+            <p>
+              Congue quisque consectetur lectus scelerisque urna rutrum ut venenatis nib.
+              Pellentesque interdum semper dolor morbi libero. Mollis placerat viverra scelerisque viverra magna. Turpis faucibus sodales arcu dui amet, pellentesque vitae eget euismod. Viverra interdum sed placerat proin in. Tellus turpis placerat nunc egestas facilisi. Egestas vel turpis mauris est. Fermentum sem massa morbi in volutpat.
+            </p>
+          </div>
+          <img className={styles.footer} src="/footerWaves.svg"></img>
         </div>
-
       </div>
+
+
 
     </div >
   )

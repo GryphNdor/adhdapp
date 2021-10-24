@@ -4,21 +4,22 @@
 
 .top{
   background-color: main-bg-color;
-  height:115vh;
+  height:100vh;
   margin-bottom:-275px;
   display: flex;
   align-items: center;
   clip-path: polygon(0 0, 205% 0%, 110% 75.2%, 0% 100%);
-
+  z-index: 3;
 }
 
 
 .hero{
-  position:absolute;
-  height:105%;
+  position: absolute;
+  height:100%;
   top:0;
-  right:100px;
-  z-index: 0;
+  right:0;
+  z-index: 1
+
 }
 
 .middle{
@@ -30,11 +31,25 @@
 }
 
 .bottom{
-  height: 100vh;
+  height: 150vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background: url(/Vector.svg);
   background-repeat: none;
   background-size: cover;
   /* border: black solid 2px; */
+}
+
+.bottomText{
+  height:500px;
+  display: flex;
+}
+
+.bottom p{
+  margin-left: -290px;
+}
+
+.footer{
+  position: relative;
+  bottom: 0;
 }

@@ -1,5 +1,12 @@
-h1{
+h1 {
   margin-left: 50px;
   margin-bottom: 300px;
-  font-size: 2.5em;
+  font-size:3em;
+  z-index: 6;
+}
+p {
+  width:523px;
+  height:50px;
+  z-index: 6;
+  font-size: 1em;
 }
