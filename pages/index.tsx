@@ -65,15 +65,15 @@ const Home: NextPage = () => {
         <div id="middle" className={styles.middle}>
           <div>
             <img src="/laptop.svg" alt="" />
-            <p>The app uses software combined with an eye tracker that is intuitive and simple. The software then detects any patterns and identifies distracted eye movements or zoning off and returns the results in easy to read format. The app will be free and accessible to anyone.</p>
+            <p>The app combines a simple webcam with eye tracking software that is intuitive and simple to use. The software detects any patterns and identifies distracted eye movements or zoning off and returns the results in easy to read format. The app will be free and accessible to anyone.</p>
           </div>
           <div className={styles.middleTitle}>
             <img src="/eye.svg" alt="" />
-            <p>Multiple studies have shown that eye motion is correlated to ADHD. In this particular <Link href="https://www.sciencedirect.com/science/article/pii/S0042698914001187"> study </Link>, they found that the average eye movements and blinks were higher in the group with ADHD. Using eye tracking technology, we hope to identify or help identify symptomes of ADHD</p>
+            <p>Multiple studies have shown that eye motion is correlated to ADHD. In this particular <u><Link href="https://www.sciencedirect.com/science/article/pii/S0042698914001187"> study, </Link></u> they found that the average eye movements and blinks were higher in the group with ADHD. Using eye tracking technology, we hope to identify or help identify symptoms of ADHD and help people get proper care.</p>
           </div>
           <div>
             <img src="/handshake.svg" alt="" />
-            <p>Combining research on ADHD with technology makes diagnosing ADHD easier for doctors. Downloading the app can help patients beyond the hospital room.The app will be free to use and will help to close healthcare inequality and better healthcare overall.</p>
+            <p>Combining ADHD research with technology makes diagnosing the disorder easier for doctors. Alongside doctors, patients can download the app and get a prognosis before going to the hospital room. This helps the healthcare industry and addresses income inequality by decreasing hospital visits for ADHD.</p>
           </div>
         </div>
 
