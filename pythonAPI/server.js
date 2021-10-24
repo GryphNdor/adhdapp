@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
   python.on('close', (code) => {
     console.log(`child process close all stdio with code ${code}`)
-    res.sendFile('GazeTracking/graph.png', options, (err) => {
+    res.sendFile('graph.png', options, (err) => {
       if (err) {
         next(err)
       }

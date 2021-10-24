@@ -6,7 +6,7 @@ def main():
     tracking.connect()
 
     # Start tracking app for t seconds
-    tracking.startTracking(1.0)
+    tracking.startTracking(15.0)
 
 
 if __name__ == "__main__":
