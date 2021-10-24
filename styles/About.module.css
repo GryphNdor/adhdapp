@@ -1,0 +1,11 @@
+@value main-bg-color: #5166D8;
+@value secondary-bg-color: #5A7FFF;
+@value button-color: #AFD9FF;
+
+.main{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: main-bg-color;
+}

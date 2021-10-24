@@ -28,9 +28,9 @@
     justify-content: space-evenly;
   }
   .container ul:first-child{
-  cursor: pointer;
-  display: inline-block;
-  padding: 0px;
-  color:blue;
-}
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px;
+    color:blue;
+  }
 }

@@ -16,12 +16,12 @@ app.get('/', (req, res) => {
 
   python.stdout.on('data', function (data) {
     console.log('Pipe data from python script ...');
-    dataToSend = data.toString();
+    dataToSend = 'success'
   });
 
   python.on('close', (code) => {
     console.log(`child process close all stdio with code ${code}`)
-    res.send(dataToSend)
+    res.send('success')
   });
 })
 
