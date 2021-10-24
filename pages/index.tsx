@@ -10,6 +10,7 @@ import Image from 'next/image'
 
 const Home: NextPage = () => {
   const [results, setResults] = React.useState(false)
+
   const callPython = () => {
     axios.get(
       'http://localhost:8080'
@@ -18,8 +19,6 @@ const Home: NextPage = () => {
       setResults(true)
     });
   }
-
-
 
   return (
     <div>
@@ -82,7 +81,7 @@ const Home: NextPage = () => {
           <div className={styles.bottomText}>
             <h1>Technology</h1>
             <p>
-              The underlying technology for this project used machine learning with OpenCV and Python to track eye movements and determine states of distractedness. The UI and webapp are both built on NextJS, a ReactJS framework with TypeScript integration.Behind the scenes the app communicates with CockroachDB to collect and store user data to be used for overall correlation. The entire app also communicates via Node APIs.
+              The underlying technology for this project used machine learning with OpenCV and Python to track eye movements and determine states of distractedness. The UI and webapp are both built on NextJS, a ReactJS framework with TypeScript integration. Behind the scenes the app communicates with CockroachDB to collect and store user data to be used for overall correlation. The entire app also communicates via Node APIs.
             </p>
 
             <img className={styles.first} src="/python.svg" alt='python' />
