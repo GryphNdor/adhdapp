@@ -1,0 +1,36 @@
+.list{
+  text-decoration: none;
+}
+
+.header{
+  position:absolute;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.container li{
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.container ul:first-child{
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 20px;
+  color:blue;
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+    justify-content: space-evenly;
+  }
+  .container ul:first-child{
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px;
+  color:blue;
+}
+}

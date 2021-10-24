@@ -6,7 +6,9 @@ import '../styles/pureStyles.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
 export default MyApp

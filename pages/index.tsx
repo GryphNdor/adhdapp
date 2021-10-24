@@ -1,15 +1,16 @@
 import axios from 'axios'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import React from 'react'
+import { forwardRef } from 'react'
 import styles from '../styles/Home.module.css'
 
 
 const callPython = () => {
-  axios.post(
-    '~/pythonStuff/hello_world.py',
-    { data: "test" }
+  axios.get(
+    'http://localhost:8080'
   ).then((res) => {
-    console.log(res);
+    console.log(res.data);
   });
 }
 
@@ -40,11 +41,22 @@ const Home: NextPage = () => {
         </div>
 
 
-        <div className={styles.middle}>
-
+        <div id="middle" className={styles.middle}>
+          <div>
+            <img src="/laptop.svg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id urna dolor ut vestibulum mauris. Velit odio facilisis lobortis viverra convallis nisl volutpat. Orci aliquet nec diam quam. Cursus turpis gravida sed ultricies quis duis cras lectus sed.</p>
+          </div>
+          <div>
+            <img src="/eye.svg" alt="" />
+            <p>Scelerisque at sit velit et, eget in augue consectetur. Tortor, neque, sollicitudin nisl consectetur duis. Dolor, mi purus hendrerit ultricies purus. Eget scelerisque orci proin pellentesque aenean. Sed sed in risus aliquet id.</p>
+          </div>
+          <div>
+            <img src="/handshake.svg" alt="" />
+            <p>Nisl, at dui arcu facilisis. Quis hendrerit suspendisse purus viverra eget gravida ut. Risus facilisi magna tortor, eget senectus semper. Velit a non faucibus porttitor phasellus ac.</p>
+          </div>
         </div>
 
-        <div className={styles.bottom}>
+        <div id="bottom" className={styles.bottom}>
           <div className={styles.bottomText}>
             <h1>Technology</h1>
             <p>
@@ -52,7 +64,7 @@ const Home: NextPage = () => {
               Pellentesque interdum semper dolor morbi libero. Mollis placerat viverra scelerisque viverra magna. Turpis faucibus sodales arcu dui amet, pellentesque vitae eget euismod. Viverra interdum sed placerat proin in. Tellus turpis placerat nunc egestas facilisi. Egestas vel turpis mauris est. Fermentum sem massa morbi in volutpat.
             </p>
 
-            <img className={styles.first} src="/nvidia.svg" alt='nvidia' />
+            <img className={styles.first} src="/python.svg" alt='python' />
             <img className={styles.second} src="/nextjs.svg" alt='nextjs' />
             <img className={styles.third} src="/cockroachlabs.svg" alt='cockroachlabs' />
             <img className={styles.fourth} src="/opencv.svg" alt='opencv' />

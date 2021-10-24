@@ -19,11 +19,13 @@
   font-size: 20px;
   background-color: button-color;
   border: none;
+  color:main-bg-color;
   border-radius: 10px;
 }
 
 .openAppButton:hover{
-  background-color: #9ac0e3;
+  background-color: #9abcdc;
+  color:white
 }
 
 .titleBox{
@@ -54,8 +56,23 @@
   z-index: 10;
   height: 100vh;
   margin-bottom: -200px;
+  display: flex;
+  margin-left: -50px;
+  align-items: center;
+  justify-content: space-around;
   background-color: secondary-bg-color;
   /* border: black solid 2px; */
+}
+
+.middle div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.middle p{
+  width:75%;
 }
 
 .bottom{
@@ -116,28 +133,44 @@
 
 
 @media screen and (max-width: 600px) {
+  .middle{
+    flex-direction: column;
+    justify-content: center;
+    height:120vh;
+  }
+  .middle div{
+  margin-bottom: 40px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
   .titleBox{
     margin-left: 20px;
   }
   .bottomText{
     margin-left: 20px;
   }
-  .techStack{
-    display:flex;
-    flex-direction: row;
-    margin-left:500px;
-  }
   
 }
 
 @media screen and (max-width: 800px) {
   .first, .second, .third, .fourth{
-    top:450px;
-  }
-  .second{
-    right: 300px;
+    top:350px;
   }
   .first{
-    right: 100px;
+    left: 0px;
   }
+  .second{
+    left: 100px;
+  }
+  .third{
+    left:200px;
+  }
+  .fourth{
+    left:300px;
+  }
+
 }
+

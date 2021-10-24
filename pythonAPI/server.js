@@ -1,8 +1,11 @@
 const express = require('express')
 const { spawn } = require('child_process')
 const app = express()
+const cors = require('cors')
 
-const PORT = 4400
+const PORT = 8080
+
+app.use(cors())
 
 app.get('/', (req, res) => {
 
